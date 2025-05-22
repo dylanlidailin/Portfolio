@@ -5,7 +5,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Dailin LI Portfolio</title>
   <style>
-    /* ===== Reset & Base ===== */
     * { margin: 0; padding: 0; box-sizing: border-box; }
     body {
       font-family: 'Helvetica Neue', sans-serif;
@@ -15,8 +14,6 @@
     }
     a { color: inherit; text-decoration: none; }
     ul { list-style: none; }
-
-    /* ===== Header ===== */
     header {
       display: flex;
       justify-content: space-between;
@@ -34,8 +31,6 @@
       color: #ccc;
     }
     .nav-links a:hover { color: #fff; }
-
-    /* ===== Hero Section ===== */
     .hero {
       padding: 100px 40px;
       display: flex;
@@ -53,8 +48,6 @@
       color: #b7d64b;
       max-width: 600px;
     }
-
-    /* ===== Services ===== */
     .services {
       padding: 100px 40px;
       background-color: #0d0d0d;
@@ -86,8 +79,6 @@
       cursor: pointer;
       color: #000;
     }
-
-    /* ===== Contact ===== */
     .contact {
       padding: 100px 40px;
       background-color: #0d0d0d;
@@ -122,8 +113,6 @@
       color: black;
       cursor: pointer;
     }
-
-    /* ===== Portfolio ===== */
     .portfolio {
       padding: 100px 40px;
     }
@@ -174,7 +163,7 @@
 </head>
 <body>
   <header>
-    <h3>Dailin LI</h3>
+    <h3>Dailin Li</h3>
     <nav class="nav-links">
       <a href="#work">My work</a>
       <a href="#contact">Contact</a>
@@ -233,6 +222,7 @@
           This project uses the Leaflet package in R for interactive map rendering. The dataset, obtained from the Charlottesville Open Data Portal, contains spatial and temporal information on bus stops. I performed statistical analysis to identify the busiest hours and locations for buses in Charlottesville and conducted further analysis on how bus operations could be improved to better serve the low-income population.
         </p>
       </div>
+    </div>
 
     <div class="card">
       <div class="card-title">&bull; Artemis PDF Chatbot</div>
@@ -246,32 +236,35 @@
       </div>
       <button class="expand-btn">+ expand</button>
     </div>
-    <button class="expand-btn" onclick="toggleDetails('charlottesville-details')">+ expand</button>
-      <div id="charlottesville-details" style="display:none; margin-top: 30px;">
-        <h3 style="color: #e0ff4f; font-size: 1.5em; margin-bottom: 10px;">PROJECT OVERVIEW</h3>
-        <p style="margin-bottom: 30px; color: #ccc; max-width: 800px;">
-          The project uses OpenAI's GPT4.0 model and its PDF identifier. The PDF file is uploaded to the server, and the text is extracted using the PyMuPDF library. The extracted text is then chunked into smaller pieces for better processing. The Langchain library is used to create a conversational agent that can answer questions based on the content of the PDF. The FastAPI framework is used to build the web application, allowing users to interact with the chatbot through a user-friendly interface.
-        </p>
-      </div>
 
     <div class="card">
       <div class="card-title">&bull; Spotify API</div>
       <a href="#" target="_blank">
-        <img src="image/spotify.png" alt="Spotify API Project">
+        <img src="image/spotify.png" alt="DIY Spotify">
       </a>
       <div class="card-tags">
         <span>MySQL</span>
         <span>FastAPI</span>
       </div>
-       <button class="expand-btn">+ expand</button>
-    </div>
-    <button class="expand-btn" onclick="toggleDetails('charlottesville-details')">+ expand</button>
-      <div id="charlottesville-details" style="display:none; margin-top: 30px;">
+      <button class="expand-btn">+ expand</button>
+      <div id="spotify-details" style="display:none; margin-top: 30px;">
         <h3 style="color: #e0ff4f; font-size: 1.5em; margin-bottom: 10px;">PROJECT OVERVIEW</h3>
         <p style="margin-bottom: 30px; color: #ccc; max-width: 800px;">
           This project involves building a custom, web-based music player modeled after Spotify. It showcases the ability to organize and structure data files according to a defined schema, ingest and process those files using cloud-native tools, store song metadata in a relational database, and expose that data through a well-designed API. The project emphasizes full-stack data flow—from data modeling to backend integration.
+        </p>
       </div>
     </div>
   </section>
+
+  <script>
+    function toggleDetails(id) {
+      const el = document.getElementById(id);
+      if (el.style.display === "none" || el.style.display === "") {
+        el.style.display = "block";
+      } else {
+        el.style.display = "none";
+      }
+    }
+  </script>
 </body>
 </html>
