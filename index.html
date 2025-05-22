@@ -232,8 +232,6 @@
         <p style="margin-bottom: 30px; color: #ccc; max-width: 800px;">
           This project uses the Leaflet package in R for interactive map rendering. The dataset, obtained from the Charlottesville Open Data Portal, contains spatial and temporal information on bus stops. I performed statistical analysis to identify the busiest hours and locations for buses in Charlottesville and conducted further analysis on how bus operations could be improved to better serve the low-income population.
         </p>
-        <img src="image/808655d4-1ae1-4516-8726-9bfc9515abb8.png" style="max-width: 100%; border-radius: 15px; margin-bottom: 30px;">
-        <img src="image/64e1be5b-e07d-4be2-9e34-b278c216c640.png" style="max-width: 100%; border-radius: 15px;">
       </div>
 
     <div class="card">
@@ -248,37 +246,13 @@
       </div>
       <button class="expand-btn">+ expand</button>
     </div>
-
-    <div class="card">
-      <div class="card-title">&bull; Charlottesville Bus Ridership Analysis</div>
-      <a href="https://dylanlidailin.github.io" target="_blank">
-        <img src="image/uvabus.png" alt="Charlottesville Project">
-      </a>
-      <div class="card-tags">
-        <span>R</span>
-        <span>Data Wrangling</span>
-      </div>
-      <button class="expand-btn" onclick="toggleDetails('charlottesville-details')">+ expand</button>
+    <button class="expand-btn" onclick="toggleDetails('charlottesville-details')">+ expand</button>
       <div id="charlottesville-details" style="display:none; margin-top: 30px;">
         <h3 style="color: #e0ff4f; font-size: 1.5em; margin-bottom: 10px;">PROJECT OVERVIEW</h3>
         <p style="margin-bottom: 30px; color: #ccc; max-width: 800px;">
-          This project uses the Leaflet package in R for interactive map rendering. The dataset, obtained from the Charlottesville Open Data Portal, contains spatial and temporal information on bus stops. I performed statistical analysis to identify the busiest hours and locations for buses in Charlottesville and conducted further analysis on how bus operations could be improved to better serve the low-income population.
+          The project uses OpenAI's GPT4.0 model and its PDF identifier. The PDF file is uploaded to the server, and the text is extracted using the PyMuPDF library. The extracted text is then chunked into smaller pieces for better processing. The Langchain library is used to create a conversational agent that can answer questions based on the content of the PDF. The FastAPI framework is used to build the web application, allowing users to interact with the chatbot through a user-friendly interface.
         </p>
-        <img src="image/808655d4-1ae1-4516-8726-9bfc9515abb8.png" style="max-width: 100%; border-radius: 15px; margin-bottom: 30px;">
-        <img src="image/64e1be5b-e07d-4be2-9e34-b278c216c640.png" style="max-width: 100%; border-radius: 15px;">
       </div>
-    </div>
-
-    <script>
-      function toggleDetails(id) {
-        const el = document.getElementById(id);
-        if (el.style.display === "none") {
-          el.style.display = "block";
-        } else {
-          el.style.display = "none";
-        }
-      }
-    </script>
 
     <div class="card">
       <div class="card-title">&bull; Spotify API</div>
@@ -289,7 +263,14 @@
         <span>MySQL</span>
         <span>FastAPI</span>
       </div>
-      <button class="expand-btn">+ expand</button>
+       <button class="expand-btn">+ expand</button>
+    </div>
+    <button class="expand-btn" onclick="toggleDetails('charlottesville-details')">+ expand</button>
+      <div id="charlottesville-details" style="display:none; margin-top: 30px;">
+        <h3 style="color: #e0ff4f; font-size: 1.5em; margin-bottom: 10px;">PROJECT OVERVIEW</h3>
+        <p style="margin-bottom: 30px; color: #ccc; max-width: 800px;">
+          This project involves building a custom, web-based music player modeled after Spotify. It showcases the ability to organize and structure data files according to a defined schema, ingest and process those files using cloud-native tools, store song metadata in a relational database, and expose that data through a well-designed API. The project emphasizes full-stack data flow—from data modeling to backend integration.
+      </div>
     </div>
   </section>
 </body>
