@@ -187,7 +187,7 @@
   </section>
 
   <section class="services">
-    <h2 class="services-title">My <em style="color: #c6e84f; font-style: italic">services</em></h2>
+    <h2 class="services-title">My <em style="color: #c6e84f; font-style: italic">skills</em></h2>
     <div class="service-list">
       <div class="service-item">
         <a href="https://github.com/dylanlidailin/DS-3021" target="_blank" style="color: white; flex: 1; display: flex; justify-content: space-between;">
@@ -242,18 +242,38 @@
       <button class="expand-btn">+ expand</button>
     </div>
 
+    <!-- previous content omitted for brevity -->
+
     <div class="card">
-      <div class="card-title">&bull; UVA Rec Dashboard</div>
-      <a href="/downloads/UVA_Rec_Dashboard.zip" download>
-        <img src="image/rec-dash.png" alt="UVA Rec Dashboard">
+      <div class="card-title">&bull; Charlottesville Bus Ridership Analysis</div>
+      <a href="https://dylanlidailin.github.io" target="_blank">
+        <img src="image/uvabus.png" alt="Charlottesville Project">
       </a>
       <div class="card-tags">
-        <span>Tableau</span>
-        <span>Python</span>
+        <span>R</span>
         <span>Data Wrangling</span>
       </div>
-      <button class="expand-btn">+ expand</button>
+      <button class="expand-btn" onclick="toggleDetails('charlottesville-details')">+ expand</button>
+      <div id="charlottesville-details" style="display:none; margin-top: 30px;">
+        <h3 style="color: #e0ff4f; font-size: 1.5em; margin-bottom: 10px;">PROJECT OVERVIEW</h3>
+        <p style="margin-bottom: 30px; color: #ccc; max-width: 800px;">
+          This project uses the Leaflet package in R for interactive map rendering. The dataset, obtained from the Charlottesville Open Data Portal, contains spatial and temporal information on bus stops. I performed statistical analysis to identify the busiest hours and locations for buses in Charlottesville and conducted further analysis on how bus operations could be improved to better serve the low-income population.
+        </p>
+        <img src="image/808655d4-1ae1-4516-8726-9bfc9515abb8.png" style="max-width: 100%; border-radius: 15px; margin-bottom: 30px;">
+        <img src="image/64e1be5b-e07d-4be2-9e34-b278c216c640.png" style="max-width: 100%; border-radius: 15px;">
+      </div>
     </div>
+
+    <script>
+      function toggleDetails(id) {
+        const el = document.getElementById(id);
+        if (el.style.display === "none") {
+          el.style.display = "block";
+        } else {
+          el.style.display = "none";
+        }
+      }
+    </script>
 
     <div class="card">
       <div class="card-title">&bull; Spotify API</div>
