@@ -160,6 +160,7 @@
       cursor: pointer;
     }
   </style>
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
 </head>
 <body>
   <header>
@@ -172,7 +173,7 @@
 
   <section class="hero">
     <h1>Dailin LI</h1>
-    <p>I am an aspiring data scientist, leveraging the power of data analysis and coding to bridge the gap between data and technology. My passion is finding innovative solutions that make a real-world impact.</p>
+    <h2><span id="typed-output"></span></h2>
   </section>
 
   <section class="services">
@@ -284,5 +285,19 @@
       }
     }
   </script>
+  <script>
+  new Typed("#typed-output", {
+    strings: [
+      "Aspiring Data Scientist.",
+      "Passionate RAG Learner.",
+      "Economist (Sort of).",
+      "NLP Learner."
+    ],
+    typeSpeed: 50,
+    backSpeed: 25,
+    loop: true
+  });
+</script>
+
 </body>
 </html>
