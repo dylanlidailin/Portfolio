@@ -167,7 +167,8 @@
     <h3>Dailin Li</h3>
     <nav class="nav-links">
       <a href="#work">My work</a>
-      <a href="#contact">Contact</a>
+      <a href="https://notokcomputer.substack.com/publish/home?utm_source=menu">My Blog</a>
+      <a href="https://www.linkedin.com/in/dailin-li-6069302b2/">My LinkedIn Profile</a>
     </nav>
   </header>
 
@@ -186,6 +187,8 @@
       </div>
       <div class="service-item">Frontend Development <span>&rarr;</span></div>
       <div class="service-item">Backend development <span>&rarr;</span></div>
+      <div class="service-item">Data Analysis <span>&rarr;</span></div>
+      <div class="service-item">Software Engineering <span>&rarr;</span></div>
     </div>
     <a href="#contact"><button class="contact-button">Contact me</button></a>
   </section>
@@ -217,10 +220,18 @@
       </a>
       <div class="card-tags">
         <span>FastAPI</span>
+        <span>LLM</span>
+        <span>heroku</span>
         <span>Langchain</span>
         <span>Python</span>
       </div>
-      <button class="expand-btn">+ expand</button>
+      <button class="expand-btn" onclick="toggleDetails('chatbot-details')">+ expand</button>
+      <div id="chatbot-details" style="display:none; margin-top: 30px;">
+        <h3 style="color: #e0ff4f; font-size: 1.5em; margin-bottom: 10px;">PROJECT OVERVIEW</h3>
+        <p style="margin-bottom: 30px; color: #ccc; max-width: 800px;">
+          "Artemis is an AI-powered chatbot that allows users to query PDF documents conversationally. It uses Langchain for retrieval-augmented generation (RAG) and FastAPI for the web backend. The system breaks down PDFs, indexes them, and generates relevant answers using a large language model. This project showcases real-world NLP integration, prompt engineering, and responsive UI design with backend orchestration."
+        </p>
+        </div>
     </div>
 
     <div class="card">
