@@ -142,10 +142,12 @@
       border-radius: 20px;
       font-size: 12px;
     }
+    /* Updated image style */
     .card img {
-      width: 100%;
+      width: 80%; /* 20% smaller than 100% */
+      display: block; /* To allow auto margins for centering */
+      margin: 10px auto; /* Centers the image */
       border-radius: 15px;
-      margin-top: 10px;
       cursor: pointer;
     }
     .expand-btn {
@@ -193,6 +195,11 @@
       <div class="service-item">
         <a href="https://github.com/dylanlidailin/Building-an-LLM-from-scratch" target="_blank" style="color: white; flex: 1; display: flex; justify-content: space-between;">
           LLM<span>&rarr;</span>
+        </a>
+      </div>
+      <div class="service-item">
+        <a href="https://github.com/dylanlidailin/ds3022-data-project-1/tree/main" target="_blank" style="color: white; flex: 1; display: flex; justify-content: space-between;">
+          Data Engineering<span>&rarr;</span>
         </a>
       </div>
   </section>
@@ -265,6 +272,10 @@
       <div class="card-tags">
         <span>MySQL</span>
         <span>FastAPI</span>
+        <span>S3</span>
+        <span>Lambda</span>
+        <span>EC2</span>
+        <span>Python</span>
       </div>
       <button class="expand-btn" onclick="toggleDetails('spotify-details')">+ expand</button>
       <div id="spotify-details" style="display:none; margin-top: 30px;">
